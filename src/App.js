@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss"
+import Footer from "./Footer/Footer"
+import Header from "./Header/Header"
+import ProjectList from "./ProjecList/ProjectList"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  return(
+    <div className="app-container">
+      <Header />
+      <ProjectList />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+// 1. Delete package-lock.json (not package.json!) and/or yarn.lock in your project folder.
+// 2. Delete node_modules in your project folder.
+// 3. Remove "webpack" from dependencies and/or devDependencies in the package.json file in your project folder.
+// 4. Run npm install or yarn, depending on the package manager you use.
+
+export default App

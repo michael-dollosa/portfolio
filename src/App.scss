@@ -1,0 +1,33 @@
+/* browser reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;  /* for all elements to inherit box-sizing attribute in body element css */
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px; 10px/16px = 62.5% -- 16px is default font size in browser*/
+    scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  box-sizing: border;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: #FDFDFD;
+
+  // @media only screen and (max-width: 1066px) {
+  //   font-size: 1.2rem;
+  // }
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

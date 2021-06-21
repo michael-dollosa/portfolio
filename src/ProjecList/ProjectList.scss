@@ -1,0 +1,41 @@
+.list-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+  margin: 6rem 0 6rem 0;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  // background-color: green;
+  @media only screen and (max-width: 770px) {
+    width: 500px;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 320px;
+  }
+  >*{
+    margin-top: 1rem;
+  }
+}
+
+
+@keyframes moveInBottom {
+  /* start of animation */
+  0% {
+      opacity: 0;
+      transform: translateY(10rem); /* animate in X direction */
+  }
+
+  80% {
+      opacity: 1;
+      transform: translateY(-1rem); /* animate in X direction */
+  }
+
+  /* end of animation */
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* translate 0 means to be in the original position*/
+  }
+}
