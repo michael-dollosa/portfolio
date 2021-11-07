@@ -1,14 +1,18 @@
 .list-container{
+  // background-color: red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 760px;
+  width: 1000px;
   margin: 6rem 0 6rem 0;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  // animation-name: moveInBottom;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-out;
   // background-color: green;
+  @media only screen and (max-width: 1000px) {
+    width: 500px;
+  }
   @media only screen and (max-width: 770px) {
     width: 500px;
   }

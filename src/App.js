@@ -1,13 +1,14 @@
 import "./App.scss"
 import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
-import ProjectList from "./ProjecList/ProjectList"
+import ProjectContainer from "./ProjectContainer/ProjectContainer"
+import ProjectList from "./ProjectList/ProjectList"
 
 const App = () => {
   return(
     <div className="app-container">
       <Header />
-      <ProjectList />
+      <ProjectContainer />
       <Footer />
     </div>
   )

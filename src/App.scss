@@ -1,4 +1,6 @@
 /* browser reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -14,7 +16,7 @@ html {
 
 body {
   width: 100%;
-  box-sizing: border;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
